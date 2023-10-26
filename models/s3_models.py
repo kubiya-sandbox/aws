@@ -14,3 +14,16 @@ class S3CreateBucketRequest(BaseModel):
 
 class S3CreateBucketResponse(BaseModel):
     message: str
+
+class S3DeleteBucketRequest(BaseModel):
+    bucket_name: str
+
+class S3DeleteBucketResponse(BaseModel):
+    message: str
+
+class S3DeleteObjectRequest(BaseModel):
+    bucket_name: str
+    object_key: str
+
+class S3DeleteObjectResponse(BaseModel):
+    message: str
